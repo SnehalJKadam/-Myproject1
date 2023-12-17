@@ -1,0 +1,568 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* home */
+.main .banner {
+    background-image: url("images/banner4.webp");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 70px 0;
+    font-size: 20px;
+}
+
+.main .home_div1 {
+    width: 100%;
+}
+
+.main .home_div1 h1 {
+    text-shadow: 1px 1px 2px white;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.main .home_div1 a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(53, 33, 33);
+    width: 60px;
+    padding: 10px;
+    margin: 70px 90px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.main .home_div1 a:hover {
+    color: rgb(243, 141, 141);
+}
+
+.main .heading {
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 60px;
+    margin: 40px;
+    color: white;
+}
+.main .heading button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.main .heading button:hover {
+    background-color: rgb(226, 63, 63);
+    color: white;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.container1 .content1 h2 {
+    padding-top: 70px;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.container1 .content1 p {
+    padding:30px;
+    font-size:20px;
+}
+
+.container1 .content2 img {
+    width: 800px;
+    height: 500px;
+    padding: 30px;
+}
+
+.Services {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.Services .container .title h2 {
+    text-align: center;
+    padding: 30px;
+    font-size: 50px;
+    font-weight: 600px;
+    text-decoration: underline;
+}
+
+.Services .field {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.Services .field .box {
+    flex: 1 13rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.Services .field .box h2 {
+    font-size: 1.3rem;
+    color: var(--black);
+    text-transform: capitalize;
+    z-index: 11;
+    text-decoration: underline;
+}
+
+.Services .field .box img {
+    width: 300px;
+    height: 300px;
+    align-self: center;
+    transition: .2s;
+    z-index: 0;
+    margin-top: 30px;
+    ;
+}
+
+.Services .field .box img:hover {
+    animation: rot .5s linear;
+
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(12deg) scale(1.032);
+
+    }
+
+    75% {
+        transform: rotate(-12deg) scale(1.032);
+
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* newsletters */
+.newsletter {
+    height: 200px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background-color: brown;
+
+}
+
+.newsletter h1 {
+    margin: 10px;
+}
+
+.newsletter p {
+    font-size: 20px;
+}
+
+.newsletter input {
+    width: 300px;
+    height: 40px;
+    margin-right: 5px;
+
+}
+
+.newsletter button {
+    width: 100px;
+    height: 40px;
+    margin-right: 20px;
+    border: none;
+    background-color: rgb(235, 217, 217);
+    font-size: 15px;
+
+}
+
+/* footer */
+.container .field {
+    display: flex;
+    padding: 30px;
+}
+
+footer {
+    width: 100%;
+    padding: 70px 0;
+    line-height: 40px;
+    margin-right: 30px;
+
+}
+
+footer .des,
+footer .category,
+footer .links,
+footer .contact {
+    padding: 5px;
+    flex: 1 1 20%;
+}
+
+footer .des h1 {
+    color: var(--green);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+
+footer .des p {
+    padding: 10px 0;
+}
+
+footer .des .social .fab {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--green);
+    text-align: center;
+    color: brown;
+}
+
+footer h2 {
+    text-transform: capitalize;
+}
+
+footer li {
+    list-style: none;
+    padding: 5px 0;
+    text-transform: capitalize;
+    transition: .3s;
+
+}
+
+footer li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer .contact li:hover {
+    text-decoration: none;
+}
+
+footer .contact li span {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+footer .copy {
+    width: 100%;
+    padding: 10px 0;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+footer .copy span {
+    font-weight: 600;
+}
+
+footer .copy hr {
+    margin-bottom: 5px;
+}
+
+/*contact us*/
+.data {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    padding-top: 40px;
+    padding-left: 60px;
+    align-items: center;
+
+}
+
+.title h2 {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+/* contact */
+
+.data .details {
+    display: block;
+    width: 40%;
+    height: 600px;
+    line-height: 50px;
+    font-size: 20px;
+    padding-top: 40px;
+    padding-left: 60px;
+    margin-left: 40px;
+    align-items: center;
+    background-color: rgb(248, 229, 229);
+
+}
+
+.data .details h1 {
+    text-decoration: underline;
+    font-size: 30px;
+    text-align: center;
+}
+
+.data .details input[type="submit"] {
+    padding: 10px;
+    border-radius:10px;
+    border: none;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width:90px;
+    font-size: 20px;
+}
+
+.data .details input[type="submit"]:hover {
+    padding: 15px;
+
+}
+
+.data .details input,
+select {
+    padding: 5px;
+    border: 1px solid black;
+    width:200px;
+
+}
+
+.about .container .title {
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.about .container img {
+    width: 500px;
+    height: 400px;
+
+}
+
+.about .container img:hover {
+    animation: rot .2s ease-in-out;
+
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg) scale(1.032);
+
+    }
+
+    75% {
+        transform: rotate(-5deg) scale(1.032);
+
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.about .container p {
+    font-size: 20px;
+    line-height: 25px;
+    transition: .3s;
+
+}
+
+.about .content p {
+    padding-top: 25px 0;
+    line-height: 25px;
+    transition: .3s;
+    color: #111;
+    padding-bottom: 10px;
+
+}
+
+.about .content p.show {
+    line-height: 0;
+    opacity: 0;
+    transition: .3s;
+}
+
+.about.show .content p.show {
+    line-height: 25px;
+    opacity: 1;
+
+}
+
+.about .content a {
+    width: 120px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.field {
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+
+}
+
+.field img {
+    width: 300px;
+    height: 300px;
+}
+
+.field .box h2 {
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px;
+}
+
+/*.......Services..............*/
+.section1,
+.section2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px;
+
+}
+
+.section1 .div1,
+.div2,
+.div3,
+.section2 .div4,
+.div5,
+.div6 {
+
+    width: 300px;
+    text-align: center;
+    justify-content: space-between;
+    height: 250px;
+    line-height: 25px;
+    padding: 5px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.section1 .div2,
+.div3,
+.section2 .div4,
+.div5,
+.div6 {
+    border: 3px solid rgb(238, 226, 226);
+    background-color: rgb(133, 61, 61);
+    padding: 20px;
+    text-align: center;
+
+}
+
+.section1 .div2 h3 {
+    text-decoration: underline 3px;
+    padding-bottom: 15px;
+}
+
+.section1 .div3 h3 {
+    text-decoration: underline 3px;
+    padding-bottom: 15px;
+}
+
+.section2 .div4 h3 {
+    text-decoration: underline 3px;
+    padding-bottom: 15px;
+}
+
+.section2 .div5 h3 {
+    text-decoration: underline 3px;
+    padding-bottom: 15px;
+}
+
+.section2 .div6 h3 {
+    text-decoration: underline 3px;
+    padding-bottom: 15px;
+}
+
+.main1 h1 {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+}
+
+/*......photos.......*/
+.main2 {
+    display: flex;
+    width: 100%;
+    height: 1300px;
+    padding-left: 140px;
+
+}
+
+.title h1 {
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+}
+
+.main2 .piccontainer1 img {
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+
+
+}
+
+.main2 .piccontainer1 img:hover {
+    animation: view .5s linear;
+
+}
+
+.main2 .piccontainer1 h1:hover {
+    font-size: 50px;
+    animation: view .5s;
+
+}
+
+@keyframes view {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: scale(1.060);
+
+    }
+
+    75% {
+        transform: scale(1.060);
+
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
